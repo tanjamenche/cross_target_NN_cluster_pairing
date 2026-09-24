@@ -1,0 +1,29 @@
+# Information about example data
+
+Example data contains an input data folder and an output data folder (showing output data generated after running the script). Input data has the following structure:
+
+input_data/ 
+├── protein1
+│ ├── cell2_ROI_dbscan.yaml
+│ ├── cell2_ROI_dbscan.hdf5
+│ ├── cell2_ROI_dbscan_centers.yaml
+│ ├── cell2_ROI_dbscan_centers.hdf5 
+│ ├── cell1_ROI_dbscan.yaml
+│ ├── cell1_ROI_dbscan.hdf5
+│ ├── cell1_ROI_dbscan_centers.yaml
+│ └── cell1_ROI_dbscan_centers.hdf5 
+│ 
+└── protein2/ 
+  ├── cell2_ROI_dbscan.yaml
+  ├── cell2_ROI_dbscan.hdf5
+  ├── cell2_ROI_dbscan_centers.yaml
+  ├── cell2_ROI_dbscan_centers.hdf5 
+  ├── cell1_ROI_dbscan.yaml
+  ├── cell1_ROI_dbscan.hdf5
+  ├── cell1_ROI_dbscan_centers.yaml
+  └── cell1_ROI_dbscan_centers.hdf5   
+
+Each subfolder contains DBSCAN HDF5 files with clustered localizations (_dbscan.hdf5) and associated DBSCAN cluster center HDF5 files (_dbscan_centers.hdf5) with cluster centers, generated from localization data via the clustering algorithm DBSCAN with the Picasso Software (https://github.com/jungmannlab/picasso) version 7.3 and with the PicassoBatchProcess (https://github.com/HeilemannLab/PicassoBatchProcess) Software. HDF5 files generated with the Picasso Software are accompanied by a YAML file of the same filename as the HDF5 file (_ROI_dbscan_centers.yaml), containing metadata. This file is needed to open the HDF5 file in Picasso.      
+
+
+   
